@@ -1,0 +1,31 @@
+#usersTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+td {
+    padding: 0.7rem;
+    color: white;
+    border: 1px solid #2E353E;
+}
+
+
+tr:nth-child(odd) {
+    background-color: #20262e;
+}
+
+tr:nth-child(even) {
+    background-color: #20262E;
+}
+
+tr:hover{
+    background-color: #2d3339;
+}
+
+th {
+    color: white;
+    background: rgb(30,165,76);
+    padding: 0.7rem;
+    border: none;
+}
