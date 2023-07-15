@@ -22,7 +22,6 @@ const Table = () => {
           <th>Contact</th>
           <th>Gender</th>
           <th>Action 1</th>
-          <th>Action 2</th>
         </tr>
       </thead>
       <tbody>
@@ -31,6 +30,7 @@ const Table = () => {
           return(
           <TableRow
             key={user._id}
+            userId= {user._id}
             srNo={index + 1}
             fullName={user.fullName}
             gender={user.gender}

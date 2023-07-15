@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/CreateUser" element={<CreateUser/>}/>
-        <Route path="/EditUser" element={<EditUser/>}/>
         <Route path="/" element={<Dashboard />}/>
         <Route path="/Dashboard" element={<Dashboard />}/>
+        <Route path="/CreateUser" element={<CreateUser/>}/>
+        <Route path="/EditUser/:userId" element={<EditUser/>}/>
         <Route path="*" element={<h1>404 Page not found </h1>}/>
       </Routes>
     </BrowserRouter>

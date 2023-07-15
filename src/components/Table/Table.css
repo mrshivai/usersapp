@@ -7,7 +7,7 @@
 td {
     padding: 0.7rem;
     color: white;
-    border: 1px solid #2E353E;
+    border: none;
 }
 
 
@@ -19,9 +19,20 @@ tr:nth-child(even) {
     background-color: #20262E;
 }
 
+
+
 tr:hover{
+    cursor: pointer;
     background-color: #2d3339;
 }
+
+tr:focus{
+    background-color:#3f464d;
+    color: white;
+}
+
+
+
 
 th {
     color: white;
