@@ -1,0 +1,20 @@
+
+#deleteBtn {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+#deleteBtn:hover {
+    color: white;
+}
+
+#editUser {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#editUser:hover {
+    color: white;
+
+}
