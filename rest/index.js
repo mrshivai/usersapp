@@ -14,17 +14,17 @@ conn.on("error", (error) => {
 });
 
 app.use(cors());
-
-
-// Middleware
 app.use (express.json());
-app.use(express.urlencoded ({
-extended: false }));
-app.use(
-cors({
-origin: ["http://localhost:3000", "https://userappff.onrender.com"],
-})
-);
+
+
+// // Middleware
+// app.use(express.urlencoded ({
+// extended: false }));
+// app.use(
+// cors({
+// origin: ["http://localhost:3000", "https://userappff.onrender.com"],
+// })
+// );
 
 //routes
 app.use("/users", require("./routes/users"));
