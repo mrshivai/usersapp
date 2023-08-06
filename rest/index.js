@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const conn = require("./db");
 
 conn.on("connected", () => {
@@ -13,8 +13,18 @@ conn.on("error", (error) => {
     process.exit(1); // Exit the application with an error code
 });
 
-app.use(express.json());
 app.use(cors());
+
+
+// Middleware
+app.use (express.json());
+app.use(express.urlencoded ({
+extended: false }));
+app.use(
+cors({
+origin: ["http://localhost:3000", "https://userappff.onrender.com"],
+})
+);
 
 //routes
 app.use("/users", require("./routes/users"));
