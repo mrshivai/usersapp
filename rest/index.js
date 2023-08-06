@@ -17,14 +17,14 @@ app.use(cors());
 app.use (express.json());
 
 
-// // Middleware
-// app.use(express.urlencoded ({
-// extended: false }));
-// app.use(
-// cors({
-// origin: ["http://localhost:3000", "https://userappff.onrender.com"],
-// })
-// );
+// Middleware
+app.use(express.urlencoded ({
+extended: false }));
+app.use(
+cors({
+origin: ["http://localhost:3000", "https://userappff.onrender.com"],
+})
+);
 
 //routes
 app.use("/users", require("./routes/users"));
