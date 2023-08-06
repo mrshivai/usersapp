@@ -4,12 +4,9 @@
   "description": "this is my first node app",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "frontend": "npm start frontend",
-    "frontendinstall": "npm install --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install frontend && npm run build frontend"
+    "dev": "nodemon index.js",
+    "build": "npm i",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jaydeep",
   "license": "ISC",
