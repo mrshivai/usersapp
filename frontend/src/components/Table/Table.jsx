@@ -8,7 +8,7 @@ const Table = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users/getAllUsers")
+      .get("https://uesrapp.onrender.com/users/getAllUsers")
       .then((res) => setUserData(res.data));
   }, []);
 
