@@ -13,7 +13,7 @@ const EditUser = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/users/getuser/${userId}`)
+      .get(`https://uesrapp.onrender.com/users/getuser/${userId}`)
       .then((res) => {
         setUser(res.data[0]);
       });
@@ -30,7 +30,7 @@ const EditUser = () => {
     };
 
     axios
-    .patch(`http://localhost:5000/users/updateUser/${userId}`, userData)
+    .patch(`https://uesrapp.onrender.com/users/updateUser/${userId}`, userData)
     .then(() => 
     { 
       // alert("User edited Successfully");
