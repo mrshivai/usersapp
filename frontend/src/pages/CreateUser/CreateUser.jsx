@@ -22,7 +22,7 @@ const CreateUser = () => {
     };
 
     axios
-      .post("http://localhost:5000/users/saveuser", user)
+      .post("https://uesrapp.onrender.com/users/saveuser", user)
       .then(() => {
         // window.alert("User Created Successfully");
         navigator("/");
